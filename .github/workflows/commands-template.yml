@@ -4,7 +4,7 @@ name: commands-template # Reusable Commands Template
 
 on:
   workflow_run:
-    workflows: ["Every Push Workflow", "Manual Workflow"]
+    workflows:  ["workflow-every", workflow-manual"]
     types:
       - completed
 
