@@ -1,6 +1,6 @@
 # .github/workflows/commands-template.yml
 ---
-name: Reusable Commands Template
+name: commands-template # Reusable Commands Template
 
 on:
   workflow_run:

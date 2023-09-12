@@ -1,6 +1,6 @@
-# .github/workflows/vworkflow-called.yml
+# .github/workflows/workflow-called.yml
 ---
-name: Called Workflow
+name: workflow-called # Called Workflow
 
 on:
   workflow_run:
