@@ -38,7 +38,7 @@ jobs:
     steps:
     - run: |
         echo TIMEZONE: $(date +%Z=%z )
-        echo DATETIME: $(date + %Y-%m-%d--%H-%M-%S--%N
+        echo DATETIME: $(date + %Y-%m-%d--%H-%M-%S--%N)
 
 # Each job must have an id to associate with the job.
 # The key job_id is a string and its value is a map of the job's configuration data.
