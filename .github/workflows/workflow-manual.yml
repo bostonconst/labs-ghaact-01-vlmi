@@ -1,4 +1,6 @@
-name: Manual Workflow
+# .github/workflows/workflow-manual.yml
+---
+name: workflow-manual # Manual Workflow
 
 on:
   workflow_dispatch:
@@ -11,3 +13,8 @@ jobs:
     - name: Set Timestamp Environment Variable
       run: |
         echo "env_workflow_manual_timestamp=$(date +'%Y-%m-%d--%H-%M-%S--%N')" >> $GITHUB_ENV
+        cat GITHUB_ENV          # =/home/runner/work/_temp/_runner_file_commands/set_env_695ac207-670b-44fe-97e8-70dbcb1a7a2f
+        cat GITHUB_OUTPUT       # =/home/runner/work/_temp/_runner_file_commands/set_output_695ac207-670b-44fe-97e8-70dbcb1a7a2f
+        cat GITHUB_PATH         # =/home/runner/work/_temp/_runner_file_commands/add_path_695ac207-670b-44fe-97e8-70dbcb1a7a2f
+        cat GITHUB_STATE        # =/home/runner/work/_temp/_runner_file_commands/save_state_695ac207-670b-44fe-97e8-70dbcb1a7a2f
+        cat GITHUB_STEP_SUMMARY # =/home/runner/work/_temp/_runner_file_commands/step_summary_695ac207-670b-44fe-97e8-70dbcb1a7a2f

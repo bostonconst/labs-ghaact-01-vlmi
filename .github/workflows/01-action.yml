@@ -1,5 +1,5 @@
 # .github/workflows/01-action.yml
-# ---
+---
 # GitHub Actions Workflow
 # v0.1.0
 # ===
@@ -14,6 +14,9 @@ name: github-workflow-01
 # Jobs run in parallel by default.
 # To run jobs sequentially, you can define dependencies on other jobs using the jobs.<job_id>.needs keyword.
 # #
+# .github/workflows/
+
+
 # Each job runs in a fresh instance of the virtual environment specified by runs-on.
 # #
 # You can run an unlimited number of jobs as long as you are within the workflow usage limits.
@@ -25,6 +28,7 @@ name: github-workflow-01
 # on: [push] -- this event triggers the workflow on any push to any branch
 # ? on: {}
 # on: {} ## Error: .github#L1 // No event triggers defined in `on` 
+
 on: [push]
 
 # TODO: try

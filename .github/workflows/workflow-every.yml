@@ -1,4 +1,6 @@
-name: Every Push Workflow
+# .github/workflows/workflow-every.yml
+---
+name: workflow-every # Every Push Workflow
 
 on:
   push:

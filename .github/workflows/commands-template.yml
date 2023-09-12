@@ -1,3 +1,5 @@
+# .github/workflows/commands-template.yml
+---
 name: Reusable Commands Template
 
 on:
