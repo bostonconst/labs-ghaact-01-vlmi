@@ -21,17 +21,24 @@ name: github-workflow-01
 # https://help.github.com/en/github/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions#usage-limits\.
 
 
-# mandatory property  "on"
+# mandatory property  "on" ; value type is String
 # on: [push] -- this event triggers the workflow on any push to any branch
 # ? on: {}
-on: [push]
+# on: [push]
+on: {}
+
+# TODO: try
+# workflow_call
+# workflow_dispatch
+# workflow_run
 
 jobs:
   job_one:
     runs-on: ubuntu-22.04
     steps:
     - run: |
-        env | sort
+        echo TIMEZONE: $(date +%Z=%z )
+        echo DATETIME: $(date + %Y-%m-%d--%H-%M-%S--%N
 
 # Each job must have an id to associate with the job.
 # The key job_id is a string and its value is a map of the job's configuration data.
