@@ -2,8 +2,8 @@ name: Every Push Workflow
 
 on:
   push:
-    branches:
-      - workflows-01
+    # branches:
+    #   - workflows-01
 
 jobs:
   build:

@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: Echo Current Time
-      run: |
-        echo "Current Time: $(date +'%Y-%m-%d--%H-%M-%S--%N')"
     # ? Nested mappings are not allowed in compact mappings at line 15, column 12:
     # incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line
+      run: |
+        echo "Current Time: $(date +'%Y-%m-%d--%H-%M-%S--%N')"

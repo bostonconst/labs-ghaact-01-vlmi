@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: Print Calling Workflow
+    # ? Nested mappings are not allowed in compact mappings at line 15, column 12:
       run: |
         echo "Calling Workflow: ${{ github.event.workflow }} from repository ${{ github.event.repository }}"
-# ? Nested mappings are not allowed in compact mappings at line 15, column 12:
 
