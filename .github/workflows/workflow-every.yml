@@ -11,4 +11,5 @@ jobs:
 
     steps:
     - name: Set Timestamp Environment Variable
-      run: echo "env_workflow_every_timestamp=$(date +'%Y-%m-%d--%H-%M-%S--%N')" >> $GITHUB_ENV
+      run: |
+        echo "env_workflow_every_timestamp=$(date +'%Y-%m-%d--%H-%M-%S--%N')" >> $GITHUB_ENV

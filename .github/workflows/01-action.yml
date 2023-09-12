@@ -24,8 +24,8 @@ name: github-workflow-01
 # mandatory property  "on" ; value type is String
 # on: [push] -- this event triggers the workflow on any push to any branch
 # ? on: {}
-# on: [push]
-on: {}
+# on: {} ## Error: .github#L1 // No event triggers defined in `on` 
+on: [push]
 
 # TODO: try
 # workflow_call
