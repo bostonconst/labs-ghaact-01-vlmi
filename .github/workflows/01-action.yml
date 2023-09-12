@@ -1,0 +1,41 @@
+# .github/workflows/01-action.yml
+# ---
+# GitHub Actions Workflow
+# v0.1.0
+# ===
+
+### --- ```
+name: github-workflow-01
+# The name of your workflow. GitHub displays the names of your workflows on your repository's actions page.
+# If you omit this field, GitHub sets the name to the workflow's filename.
+
+# mandatory property "jobs"
+# A workflow run is made up of one or more jobs.
+# Jobs run in parallel by default.
+# To run jobs sequentially, you can define dependencies on other jobs using the jobs.<job_id>.needs keyword.
+# #
+# Each job runs in a fresh instance of the virtual environment specified by runs-on.
+# #
+# You can run an unlimited number of jobs as long as you are within the workflow usage limits.
+# #
+# https://help.github.com/en/github/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions#usage-limits\.
+
+
+# mandatory property  "on"
+# on: [push] -- this event triggers the workflow on any push to any branch
+# ? on: {}
+on: [push]
+
+jobs:
+  job_one:
+    runs-on: ubuntu-22.04
+    steps:
+    - run: |
+        env | sort
+
+# Each job must have an id to associate with the job.
+# The key job_id is a string and its value is a map of the job's configuration data.
+# You must replace <job_id> with a string that is unique to the jobs object.
+# The <job_id> must start with a letter or _ and contain only alphanumeric characters, -, or _.
+
+### === ```
