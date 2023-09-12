@@ -9,7 +9,7 @@ mkdir -p .github/workflows/
 touch .github/workflows/01-action.yml
 ```
 
-Empty workflow file runs but fails (any branch name) with message
+Empty workflow file runs on push, but fails (any branch name) with message
 
 ```txt
 Annotations
