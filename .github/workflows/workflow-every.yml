@@ -1,0 +1,14 @@
+name: Every Push Workflow
+
+on:
+  push:
+    branches:
+      - workflows-01
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Set Timestamp Environment Variable
+      run: echo "env_workflow_every_timestamp=$(date +'%Y-%m-%d--%H-%M-%S--%N')" >> $GITHUB_ENV

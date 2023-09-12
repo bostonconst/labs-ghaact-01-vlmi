@@ -1,0 +1,16 @@
+name: Reusable Commands Template
+
+on:
+  workflow_run:
+    workflows: ["Every Push Workflow", "Manual Workflow"]
+    types:
+      - completed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Echo Current Time
+      run: echo "Current Time: $(date +'%Y-%m-%d--%H-%M-%S--%N')"
+# ? Nested mappings are not allowed in compact mappings at line 15, column 12:
